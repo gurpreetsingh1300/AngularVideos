@@ -1,0 +1,94 @@
+WEBVTT
+
+00:02.280 --> 00:08.680
+This course is about the latest version of angular which at the moment is angular 8.
+
+00:08.690 --> 00:10.670
+Now that sounds like you missed a lot.
+
+00:10.670 --> 00:17.330
+If you're just starting with it the good thing is you didn't because Angela worsening sounds more complex
+
+00:17.330 --> 00:18.500
+than it is.
+
+00:18.620 --> 00:26.060
+You could argue that thus far they're actually only where two major big words of angular the first one
+
+00:26.060 --> 00:35.030
+was angular J.S. also referred to as angular one that was released years ago and worked totally different
+
+00:35.150 --> 00:40.760
+than the angular you're going to learn at this course and you shouldn't use it for new projects anymore.
+
+00:40.790 --> 00:46.820
+Instead the angler team worked on a completely new version which is simply referred to as just angular
+
+00:46.850 --> 00:52.550
+so without angular J.S. which was initially released as angular two and sometimes on the internet you
+
+00:52.550 --> 00:59.260
+still just find content on angular 2 and that typically also means that it's about angular angular 8
+
+00:59.260 --> 01:03.050
+7 and so on in general but more on these observations in a second.
+
+01:03.080 --> 01:10.310
+So angular 2 was released in 2016 and it was a complete rewrite of angler J.S. It works totally different
+
+01:10.430 --> 01:16.130
+has a lot of different concepts and there are basically no similarities between these two frameworks
+
+01:16.460 --> 01:22.820
+so you don't need to know angular jazz to learn angular in which everywhere if you know angular jazz
+
+01:23.060 --> 01:27.770
+it won't be a problem but it unfortunately also won't help you much.
+
+01:27.770 --> 01:31.010
+Okay so that's angular too but discourse is about angular 8.
+
+01:31.010 --> 01:37.010
+So what happened in between there was angular for free was skipped for internal reasons.
+
+01:37.010 --> 01:39.270
+So the next version was angler 4.
+
+01:39.560 --> 01:45.690
+And then there were a couple of our worshipers five six seven and now we have angular eight.
+
+01:45.860 --> 01:53.270
+The reason for this variety of versions is simply that the angular team releases a new major word as
+
+01:53.270 --> 02:01.190
+they call it every six months roughly and they do that not to change everything with every release.
+
+02:01.190 --> 02:07.550
+Instead all the code you are learning here basically would still work in angular too with very few exceptions
+
+02:08.120 --> 02:12.500
+all the code you do learn here of course works with angular 8 because I do constantly keep this course
+
+02:12.560 --> 02:18.050
+up to date with the latest version but there haven't been many changes between angular 2 and 8.
+
+02:18.230 --> 02:22.310
+So these new numbers can be a bit confusing at first.
+
+02:22.340 --> 02:28.820
+The angular team is simply having this jewel of releasing a new bigger whereas in every six months where
+
+02:28.820 --> 02:35.600
+they have the option of introducing some bigger changes but they rarely do this and if they introduce
+
+02:35.690 --> 02:41.180
+bigger breaking changes they always do that in a backward compatible way so that what you will learn
+
+02:41.180 --> 02:45.050
+now will also still be relevant in a year or two.
+
+02:45.050 --> 02:50.790
+That simply explains angular 8 and that simply is why we have that many versions.
+
+02:50.930 --> 02:54.830
+The major shift was from angular J.S. to angular though.

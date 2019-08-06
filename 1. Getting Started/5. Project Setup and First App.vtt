@@ -1,0 +1,250 @@
+WEBVTT
+
+00:02.300 --> 00:06.600
+So now with the definition of angular and the different worship is out of the way.
+
+00:06.650 --> 00:11.390
+Let us simply dive into it and let's build our first angular app for that.
+
+00:11.480 --> 00:17.990
+We'll use the official angular command line interface Seelye and datas D recommended and best way of
+
+00:17.990 --> 00:24.890
+creating angular projects because angular projects are actually a bit more elaborate regarding their
+
+00:24.890 --> 00:26.030
+build workflow.
+
+00:26.030 --> 00:31.100
+There are a couple of files that need to be converted before they can run in the browser and to Seelye
+
+00:31.180 --> 00:38.360
+does all of that and it also heavily optimizes our code so that we ship highly optimized code version
+
+00:38.570 --> 00:39.480
+to the browser.
+
+00:39.500 --> 00:45.170
+Once we finally deploy our app which will also do in this course in the end of course so the angular
+
+00:45.230 --> 00:50.210
+Seelye and you can see all the steps you need to run on the left here and these steps are the same for
+
+00:50.210 --> 00:51.600
+Windows and Mac.
+
+00:51.680 --> 00:58.250
+Now for them to work you need one additional tool and that's note J.S. note J.S. is a service site language
+
+00:58.280 --> 01:00.610
+and you might be wondering what are we doing with it.
+
+01:00.650 --> 01:05.230
+In this course it's the angular course not the node course and you'd be right.
+
+01:05.240 --> 01:13.040
+We won't write any note chess code here but note J S will be used behind the scenes by DC ally to bundle
+
+01:13.040 --> 01:21.020
+and optimize our project and will use NPM the node package manager to manage different dependencies
+
+01:21.020 --> 01:26.410
+and angular project has dependencies are things like the angular framework itself but also some other
+
+01:26.450 --> 01:27.240
+libraries.
+
+01:27.260 --> 01:33.400
+That framework uses so you can simply download the latest version here by clicking on that button.
+
+01:33.410 --> 01:39.260
+In my case it's 10 dot 0 but that might differ for you and you will get an installer for which you can
+
+01:39.260 --> 01:46.240
+walk which will conveniently installed node chaos and this NPM tool on your machine.
+
+01:46.370 --> 01:51.350
+Once you've finished installation we can run these commands and we run them in our terminal or command
+
+01:51.350 --> 01:52.310
+prompt.
+
+01:52.310 --> 01:53.700
+Now here I'm on a Mac.
+
+01:53.720 --> 01:55.490
+Therefore I use the normal terminal.
+
+01:55.490 --> 02:01.310
+If you were on windows you would open the normal command prompt possibly open that as an administrator
+
+02:01.370 --> 02:07.570
+by right clicking on the executable and clicking Run as Administrator to rule out some potential issues.
+
+02:07.640 --> 02:15.380
+But in the end you should be able to simply run NPM using that note package venture install dash g to
+
+02:15.380 --> 02:20.690
+install it globally on your machine at angular slash seal ie.
+
+02:20.840 --> 02:30.200
+At latest at latest is optional at angular slash seal IE is not so you absolutely need to run this now
+
+02:30.290 --> 02:31.150
+on Windows.
+
+02:31.150 --> 02:37.790
+This should just work on mac or linux you probably need to add a pseudo in front of this to give yourself
+
+02:37.820 --> 02:42.260
+the right permissions hit enter and now I'm prompt to enter my password.
+
+02:42.350 --> 02:47.590
+You may or may not be and once you confirm everything.
+
+02:47.630 --> 02:54.260
+This should now download the angular Seelye from this node package manager repository and install it
+
+02:54.320 --> 02:55.640
+on your machine.
+
+02:55.640 --> 02:59.930
+Now as you can see you might get some errors in between like I'm getting here.
+
+03:00.020 --> 03:02.940
+You may ignore them as long as it's successfully installed.
+
+03:03.050 --> 03:07.930
+Ly as you can tell by the output here at the bottom so it added to it.
+
+03:08.000 --> 03:14.320
+Updated to packages or added them if you install it the first time and you see DCI and the version installed.
+
+03:14.600 --> 03:17.630
+Now the wording can differ depending on the time when you install this.
+
+03:17.630 --> 03:21.290
+By the way the general functionality will not differ.
+
+03:21.590 --> 03:24.000
+So this did work.
+
+03:24.020 --> 03:29.450
+Note that we can create our first project and we do this with this engine you command here which is
+
+03:29.450 --> 03:35.210
+now available since we installed CLIA for that navigate into a folder where you want to create that
+
+03:35.210 --> 03:35.870
+project.
+
+03:37.100 --> 03:43.610
+And once you navigate it there with the D command you can simply run energy new and then maybe my dash
+
+03:43.610 --> 03:44.890
+first dash app.
+
+03:45.020 --> 03:46.540
+This name is totally up to you.
+
+03:46.550 --> 03:49.940
+So energy new is a set command to create a new project.
+
+03:49.940 --> 03:54.650
+It must not be test or something like that though because that actually is a reserved word which will
+
+03:54.650 --> 03:55.360
+not work.
+
+03:55.520 --> 04:02.000
+Now depending on the word you're using you might be asked two questions here a couple of questions.
+
+04:02.030 --> 04:05.280
+The first one is would you like to add angular routing.
+
+04:05.300 --> 04:10.760
+Now you can just type in here or hit enter to use the diesel which is also no.
+
+04:11.240 --> 04:15.050
+And then here which styles you'd form format you want to use and there you also want to go with the
+
+04:15.050 --> 04:19.070
+default for discourse which is already selected so you can hit Enter here too.
+
+04:19.280 --> 04:24.740
+So essentially the result is hit Enter two times and now it will create a new project.
+
+04:24.740 --> 04:30.140
+And now this will create a new folder with a couple of files and dependencies on the entire build workflows
+
+04:30.140 --> 04:30.910
+setup in there.
+
+04:31.400 --> 04:38.840
+And as I said we need this more complex setup because for example angular uses typescript a superset
+
+04:38.870 --> 04:39.910
+of javascript.
+
+04:39.950 --> 04:45.890
+So basically a language that looks a bit like Javascript and is compiled down to JavaScript in the end
+
+04:46.130 --> 04:52.430
+by that workflow but which also offered some extra features and to do that compilation as well as a
+
+04:52.430 --> 04:54.270
+couple of other optimization steps.
+
+04:54.350 --> 04:58.670
+We need this more complex setup with all these dependencies.
+
+04:58.670 --> 05:04.970
+Now once this finished successfully and if it didn't check out the lecture prior to this video here
+
+05:05.060 --> 05:08.150
+I do share some common gotchas and fixes there.
+
+05:08.150 --> 05:13.070
+So once this finished successfully we can navigate into that with the city command and then the name
+
+05:13.070 --> 05:19.100
+of the project in my case it's my dash first dash app and once you're in there you can run NGO serve
+
+05:19.370 --> 05:27.110
+to basically bring up a development server that will run your built and for development optimized app
+
+05:27.590 --> 05:33.920
+so that you can see it in the browser the server runs on local host four thousand two hundred by default
+
+05:34.130 --> 05:40.760
+you see the output here so you can simply go to the browser enter local host four thousand two hundred
+
+05:41.210 --> 05:43.420
+and you should see something like this.
+
+05:43.490 --> 05:47.350
+This is just a simple starting screen provided by DCF project.
+
+05:47.390 --> 05:48.410
+Welcome to app.
+
+05:48.410 --> 05:51.470
+And then some useful links to the official docs and so on.
+
+05:51.470 --> 05:52.320
+Awesome.
+
+05:52.340 --> 05:55.670
+Now this is our first application.
+
+05:55.670 --> 05:57.440
+Now we set this up.
+
+05:57.440 --> 05:59.950
+Of course not too much is happening here.
+
+06:00.080 --> 06:06.860
+So let's edit this first step and do something more fancy with it and also understand what exactly DC
+
+06:06.860 --> 06:08.990
+like created in the next lecture.
