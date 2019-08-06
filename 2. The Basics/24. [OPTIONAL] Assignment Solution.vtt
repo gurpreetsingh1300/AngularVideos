@@ -1,0 +1,208 @@
+WEBVTT
+
+00:03.260 --> 00:04.880
+So where are you successful.
+
+00:04.940 --> 00:06.710
+Here's my solution.
+
+00:06.830 --> 00:12.080
+We should add the input field so I'll add a horizontal line again just to have some separation and then
+
+00:12.090 --> 00:14.950
+lie in PADFIELD The label of course is optional.
+
+00:14.960 --> 00:21.370
+I want to use or to enter a username so let's add an input which receives this class and which is form
+
+00:21.500 --> 00:23.060
+control.
+
+00:23.060 --> 00:26.660
+If we say it doesn't have a look at our application this is how it looks like.
+
+00:26.780 --> 00:29.750
+Now if you don't want to have it sit directly on the edges.
+
+00:29.870 --> 00:35.720
+You can of course add some bootstrap styling Judah's So maybe a container with a row inside of it and
+
+00:35.720 --> 00:38.260
+then call Access 12 class.
+
+00:38.300 --> 00:40.630
+So feel free to wrap your content in there.
+
+00:40.700 --> 00:47.270
+It's not required for the solution of this of course so that we get our input field here with the username.
+
+00:47.270 --> 00:51.880
+Now let's bind this user name to a property of our typescript file.
+
+00:52.070 --> 00:58.820
+So here I will add a new property to my app component and I will name this property username.
+
+00:58.820 --> 01:04.580
+This will be a string and will set it to an empty string initially like this.
+
+01:04.580 --> 01:08.450
+Now we learned that we can use two binding to bind to this.
+
+01:08.450 --> 01:16.370
+So on my input here I'll add to it binding by adding square brackets and then parentheses does this
+
+01:16.370 --> 01:20.970
+to her binding syntax and then Engy model.
+
+01:21.020 --> 01:26.300
+Now with that added I can bind to my username like this.
+
+01:26.960 --> 01:29.780
+Now important for Engy model to work.
+
+01:29.780 --> 01:36.830
+You need to make sure that in your app module you have forms module added to the imports because the
+
+01:36.850 --> 01:43.300
+energy model directive technically is part of the form's module provided by angular.
+
+01:43.310 --> 01:49.250
+So make sure that you have this you should have it there by default when using a Selye project and then
+
+01:49.610 --> 01:53.010
+with that we should update the user name on every keystroke.
+
+01:53.820 --> 02:01.430
+Now to be able to see that I'll add a paragraph below to input and here I want your output username.
+
+02:01.470 --> 02:07.040
+Now with that being output here we can save this Enge it serves.
+
+02:07.040 --> 02:15.350
+It should be running of course and we should see that if y enter super max here we see it below the
+
+02:15.350 --> 02:16.380
+input.
+
+02:16.480 --> 02:20.560
+So the first two tasks here are solved.
+
+02:20.600 --> 02:22.470
+Now let's add the button.
+
+02:23.180 --> 02:30.450
+So we'll add a button below the paragraph where I will say reset user and this button will first of
+
+02:30.450 --> 02:34.690
+all receive some bootstrap class Button button primary to make it look nice.
+
+02:34.800 --> 02:40.730
+But more importantly we should disable it if the user name is empty.
+
+02:40.740 --> 02:43.400
+Now how can we do that.
+
+02:43.740 --> 02:47.480
+We have learned that we can bind to the disabled property.
+
+02:47.580 --> 02:51.630
+Now even though we use that a couple of times that's of course not the only property you can bind to
+
+02:51.630 --> 02:58.470
+but it's the one we will need here now disabled because said does able to some property which is true
+
+02:58.470 --> 03:02.080
+or false or we directly set it to True or false.
+
+03:02.400 --> 03:05.270
+But as I explained between the quotation marks.
+
+03:05.280 --> 03:10.060
+You simply have an expression which resolves to True or false.
+
+03:10.080 --> 03:17.940
+Now since we want to disable this if the user name is empty we could simply check that between the quotation
+
+03:17.940 --> 03:22.830
+marks here so we could say disable this username.
+
+03:22.860 --> 03:27.460
+This property is equal to an empty string.
+
+03:27.630 --> 03:34.980
+So two single quotation marks inside here with this expression This will return true if username is
+
+03:34.980 --> 03:35.610
+empty.
+
+03:35.640 --> 03:38.160
+Therefore then this button will be disabled.
+
+03:38.250 --> 03:41.520
+Otherwise it will be false and the button will be enabled.
+
+03:41.670 --> 03:43.790
+Let's see if this works as expected.
+
+03:44.050 --> 03:50.670
+After saving this the button is indeed disabled at the beginning because username clearly is an empty
+
+03:50.670 --> 03:51.430
+string.
+
+03:51.840 --> 03:57.460
+But as soon as I type anything in here you see it gets enabled.
+
+03:57.510 --> 04:03.510
+So this is how we can use proper keybinding again with any expression which returns us to value the
+
+04:03.510 --> 04:05.660
+property we're binding to expect.
+
+04:05.700 --> 04:07.060
+So in the case of disabled.
+
+04:07.110 --> 04:09.260
+True or false.
+
+04:09.270 --> 04:11.790
+Now with that we get this solved to.
+
+04:11.970 --> 04:17.310
+Now we should also add a click listener to this button so that we can reset the user name once we do
+
+04:17.310 --> 04:18.830
+click the button.
+
+04:18.840 --> 04:22.890
+So you went finding with normal parentheses.
+
+04:23.020 --> 04:25.240
+Let's spined to collect for this.
+
+04:25.320 --> 04:32.010
+And here we could call on reset a method where we then set the user name equal to an empty string.
+
+04:32.250 --> 04:38.800
+But since it is all we're going to do I can also just say username equals empty string.
+
+04:38.970 --> 04:43.900
+And now don't mistake this for the syntax we use here on the disable property.
+
+04:43.900 --> 04:47.910
+There we have three equal signs to check something.
+
+04:47.970 --> 04:51.670
+Here we have one equals sign to assign a value.
+
+04:52.200 --> 04:59.070
+With this in place we should now be able to go back to the application and super max here and if I click
+
+04:59.070 --> 05:06.120
+reset user it's empty and aboutness disabled again because we reset the user string and that is our
+
+05:06.120 --> 05:08.300
+assignment on data binding solved.
+
+05:08.310 --> 05:09.750
+I hope you enjoyed it.

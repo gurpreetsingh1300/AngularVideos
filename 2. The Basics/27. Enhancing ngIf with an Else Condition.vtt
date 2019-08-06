@@ -1,0 +1,112 @@
+WEBVTT
+
+00:02.440 --> 00:07.980
+In the last lecture, we had a look at the basic ngIf syntax and that's the syntax you're going to use
+
+00:07.980 --> 00:11.670
+most of the time, there is one alternative to it though.
+
+00:11.850 --> 00:16.910
+Sometimes you have not only the if condition but also an else condition,
+
+00:17.160 --> 00:23.640
+so here we might want to say server was created, server name is something with ngIf but we could also
+
+00:23.640 --> 00:27.820
+add an else block where we then want to say no server was created.
+
+00:27.840 --> 00:31.690
+Now we deleted that exact text for the reason that we don't want to see it
+
+00:31.830 --> 00:34.730
+but imagine that we do want to show that alternative,
+
+00:34.740 --> 00:42.300
+so no server was created could be the text here and now we want to show this paragraph only if ngIf is
+
+00:42.360 --> 00:46.230
+not true or this condition, server created, is not true.
+
+00:46.620 --> 00:54.900
+We can achieve this by placing a local reference on this element here and local reference is something
+
+00:54.930 --> 01:00.580
+I will dive deeper into in the understanding components and data binding section of this course.
+
+01:00.600 --> 01:02.960
+For now let's think of it as a marker,
+
+01:03.150 --> 01:06.120
+so I will name this noserver,
+
+01:06.120 --> 01:07.900
+any name you like,
+
+01:08.000 --> 01:08.500
+noServer
+
+01:08.520 --> 01:10.580
+with a capital s
+
+01:10.710 --> 01:19.230
+and now we need to change the paragraph here to ng-template. That is a component, that directive shipping
+
+01:19.260 --> 01:24.350
+with Angular which you can use to mark places in the DOM
+
+01:24.660 --> 01:30.190
+and now I will add the paragraph back in this template with the text in between, like this.
+
+01:30.360 --> 01:32.750
+So now basically the text we want to output
+
+01:32.820 --> 01:39.330
+and now with ng-template, with that local reference, this marker on it, we mark a certain spot in the template
+
+01:39.390 --> 01:42.540
+which we want to show conditionally.
+
+01:42.540 --> 01:50.330
+Now to show it conditionally, we simply enhance ngIf by also adding else and then noServer,
+
+01:50.370 --> 01:57.810
+so this marker we placed on ng-template and that's all the syntax we need. If we save this, you see no
+
+01:57.810 --> 01:59.280
+server was created
+
+01:59.280 --> 02:02.820
+and as soon as I click here, that gets replaced with server was created.
+
+02:03.000 --> 02:08.210
+So that is ngIf else, a nice little addition in a use case where you have
+
+02:08.280 --> 02:10.050
+an else condition.
+
+02:10.200 --> 02:15.860
+Of course the alternative would always be to simply use ngIf with the reversed check,
+
+02:15.900 --> 02:18.480
+so with !server created
+
+02:18.690 --> 02:21.810
+but that here is another nice alternative.
+
+02:21.810 --> 02:23.830
+Now I'm going to delete it,
+
+02:23.850 --> 02:29.160
+you will find an article after the section here though where you can find this code again
+
+02:29.160 --> 02:34.940
+in case you are interested and we'll also use this code in the course project we're going to build.
+
+02:35.190 --> 02:39.510
+I just wanted to highlight that this option exists, using ngIf like
+
+02:39.510 --> 02:42.570
+this however is the case you will see most of.
+
+02:42.600 --> 02:43.590
+Now let's continue.

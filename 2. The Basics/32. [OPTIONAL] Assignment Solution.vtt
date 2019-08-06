@@ -1,0 +1,298 @@
+WEBVTT
+
+00:02.440 --> 00:05.130
+Where are you successful let's all get together.
+
+00:06.840 --> 00:13.650
+I'll start right bloaters orders list and add a button with some C S S classes button button primary
+
+00:13.980 --> 00:19.410
+where I will say display details or maybe you should even say toggle displays.
+
+00:19.420 --> 00:26.080
+Now that I think about it but I'll leave it at this then I'll add my paragraph where I say any text
+
+00:26.080 --> 00:31.610
+you like here I will stick to secret password equals tuna and I only want to display this.
+
+00:31.690 --> 00:36.070
+Well if it is not displayed and if it is displayed I want to not display it.
+
+00:36.070 --> 00:38.820
+So really toggling it.
+
+00:38.830 --> 00:40.600
+That's super easy to implement.
+
+00:40.650 --> 00:47.290
+I'll add a property to my app component which will name show secret any name you like of course and
+
+00:47.280 --> 00:49.820
+it will set this to false initially.
+
+00:50.110 --> 00:56.720
+And now in my app component I'll add a click listener to my button with event binding.
+
+00:57.070 --> 01:03.490
+And here I will simply set shows secret equal to watch shows secret.
+
+01:03.490 --> 01:05.400
+Currently it's not.
+
+01:05.500 --> 01:08.640
+So that is a quick and easy way of toggling it.
+
+01:08.710 --> 01:10.790
+So if it does fall it will be set to true.
+
+01:10.840 --> 01:13.750
+If it was true it will be set to False.
+
+01:13.750 --> 01:17.760
+Now with that I can add NGF here and check.
+
+01:17.770 --> 01:20.320
+It shows secret is true and only show it.
+
+01:20.320 --> 01:21.210
+In this case.
+
+01:21.310 --> 01:27.640
+Now with this and Engy search still running if you go back and click this now you see the toggling works
+
+01:27.940 --> 01:29.150
+as expected.
+
+01:29.170 --> 01:33.430
+So the first three tasks are already solved.
+
+01:33.430 --> 01:35.400
+Now let's move on to the fourth one.
+
+01:35.410 --> 01:42.760
+Logging it to the console for this are actually duplicate the Spartan and coming out the first solution
+
+01:42.820 --> 01:52.960
+with the easy toggling because for logging I will call a method now on toggle display maybe or on toggle
+
+01:53.050 --> 01:57.130
+displayed on toggle details Excuse me any name you like.
+
+01:57.130 --> 02:00.720
+Though I'll add this as a method in the app component.
+
+02:01.180 --> 02:07.150
+And first of all I will still use my toggling code here so I will said does show a secret you want to
+
+02:07.210 --> 02:09.060
+show secret it's not.
+
+02:09.550 --> 02:10.960
+But then I want to log it.
+
+02:10.990 --> 02:14.690
+So I'll name this log and it should be an empty array at the beginning.
+
+02:15.010 --> 02:24.030
+And then here I will simply say this log push and I want to push a new number and this number should
+
+02:24.030 --> 02:27.440
+actually take into account the current length of this.
+
+02:27.450 --> 02:32.600
+So if this is at the beginning has zero items this will be zero.
+
+02:32.760 --> 02:34.800
+So I'll add plus one.
+
+02:34.800 --> 02:38.260
+So if you have one element in the array the Lanc will be 1.
+
+02:38.320 --> 02:41.490
+So the next element should have a value of 2.
+
+02:41.970 --> 02:44.590
+So this adds these items to the log.
+
+02:44.940 --> 02:50.190
+Now I would output it below to a paragraph and I would choose a div element here.
+
+02:50.190 --> 02:52.130
+I will use energy for on it.
+
+02:52.320 --> 03:00.550
+And we learned that we use energy for by saying Let And now we could say log item any name you like
+
+03:01.090 --> 03:01.990
+of law.
+
+03:02.000 --> 03:03.990
+So off the property you want to loop through.
+
+03:04.090 --> 03:09.200
+Generally the data piece you want to loop through that could also be a method called returning an array.
+
+03:09.220 --> 03:11.440
+It has to be an array though.
+
+03:11.590 --> 03:19.180
+So here we lock we loop through the log and between the day of opening and closing Pentax I can now
+
+03:19.180 --> 03:25.450
+use stringin tribulation to output by log item that we did do it in the last lectures but it told you
+
+03:25.450 --> 03:27.550
+that last item is a variable.
+
+03:27.550 --> 03:31.180
+We can now use a template and that's exactly what we're doing here.
+
+03:31.180 --> 03:33.120
+I'm outputting a log item.
+
+03:33.520 --> 03:40.660
+So with this if we have a look at our application and I click this button you'll see that I add this
+
+03:40.660 --> 03:41.200
+list.
+
+03:41.200 --> 03:45.520
+It's jumping around because I'm adding and removing this secret password.
+
+03:45.520 --> 03:48.640
+But you see the list is growing as expected.
+
+03:48.640 --> 03:50.330
+The log is working.
+
+03:50.740 --> 03:53.030
+Now about that coloring.
+
+03:53.170 --> 03:54.800
+The fifth step here.
+
+03:55.030 --> 04:00.020
+Well it's easy to do when using a number like this when doing so.
+
+04:00.070 --> 04:04.880
+I'll go to my death and I will start with the style the black blue background.
+
+04:05.050 --> 04:10.360
+So we'll use energy style and we learned we need property binding for this to work correctly because
+
+04:10.360 --> 04:16.880
+we need to pass a javascript object configuring our styles when we want to attach which styles.
+
+04:17.230 --> 04:20.310
+So the Starla want to attach this to background color.
+
+04:20.530 --> 04:26.380
+I'll again use camel case notation though you could use single quotation marks to have background dash
+
+04:26.500 --> 04:28.630
+color as a name.
+
+04:28.780 --> 04:32.620
+And now here it's easy to check if a log item is a number.
+
+04:32.650 --> 04:39.160
+Because I want to check and LAT a log item is greater or equal than 5 in which case background color
+
+04:39.160 --> 04:40.350
+should be blue.
+
+04:40.360 --> 04:47.200
+This is a string overwise it will be transparent or white to basically have a non blue background to
+
+04:47.200 --> 04:51.680
+your log item of course is numbers so this check should be easy.
+
+04:51.760 --> 04:56.240
+And yes you could outsource this part of course into a method you call here.
+
+04:56.380 --> 05:03.010
+Generally having most of the logic in the typescript code in the body of your component is a good practice.
+
+05:03.010 --> 05:09.850
+But here I think it's also OK to put it into the template and show that this is possible to which is
+
+05:09.910 --> 05:11.320
+Ciechanow in place.
+
+05:11.380 --> 05:13.450
+Let's see if it works as expected.
+
+05:14.450 --> 05:21.060
+If I click this button the next item should have a blue background and it does.
+
+05:21.400 --> 05:25.000
+So that's working but pretty hard to read right.
+
+05:25.030 --> 05:32.380
+So let's finish the second part here and give it a wide color for this and my C S S file I will define
+
+05:32.380 --> 05:40.270
+a wide text class name any name you like of course that's totally up to you and I will set the color
+
+05:40.300 --> 05:41.490
+to white.
+
+05:41.490 --> 05:48.680
+Now does white text see us as class should only be attached if we are at element 5 or higher.
+
+05:49.060 --> 05:55.960
+So next to Engy style I will also add Engy class and I will use property binding so square brackets
+
+05:56.110 --> 06:02.380
+here too because I need to pass a javascript object to the energy class property on the energy class
+
+06:02.380 --> 06:08.440
+directive to have it work correctly because this directive needs to know which classes should be attached
+
+06:08.440 --> 06:11.820
+when well between single quotation marks.
+
+06:12.070 --> 06:20.530
+Since we have a dash inside the name I'll add the white text KLOS the Clasby just created here only
+
+06:21.070 --> 06:24.110
+if the current conditions specified here as a value.
+
+06:24.190 --> 06:25.330
+Returns true.
+
+06:25.690 --> 06:29.690
+And the condition simply is log item greater or equal than 5.
+
+06:29.920 --> 06:32.550
+Just like on the end style directive.
+
+06:32.980 --> 06:38.740
+So if this returns true we should have the white text clause attached which should turn the text white.
+
+06:38.980 --> 06:40.200
+Let's see if it works.
+
+06:40.450 --> 06:42.130
+Ugly display details so.
+
+06:42.160 --> 06:44.440
+Here the text clearly clearly is not white.
+
+06:44.470 --> 06:48.430
+That is working and now looks good.
+
+06:48.430 --> 06:50.870
+Blue background white text.
+
+06:50.920 --> 06:51.990
+Awesome.
+
+06:52.000 --> 06:59.080
+Now I will show a nice bonus to the solution in the next lecture actually where I will use time stamps
+
+06:59.440 --> 07:02.790
+because it uses an extra addition of energy for it.
+
+07:02.830 --> 07:04.270
+We haven't seen before.

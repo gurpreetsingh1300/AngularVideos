@@ -1,0 +1,127 @@
+WEBVTT
+
+00:03.030 --> 00:09.620
+With all these directives learned, let's now have a look at the last built-in directive for now,
+
+00:09.850 --> 00:11.720
+an important one though.
+
+00:12.360 --> 00:19.520
+It's sad that we can click the add server button but we don't actually add servers to our list here right,
+
+00:19.530 --> 00:23.340
+this list doesn't grow, this list is totally static,
+
+00:23.820 --> 00:27.720
+we can change this with the ngFor directive,
+
+00:27.780 --> 00:32.310
+so let's have a look at how it works. In our servers component here,
+
+00:32.370 --> 00:37.810
+we right now manually add our app-server component twice,
+
+00:38.160 --> 00:43.490
+it would be nicer to have an array of servers which adds it dynamically.
+
+00:43.490 --> 00:48.350
+So in the servers component here, I'll add a new property, servers
+
+00:48.780 --> 00:50.120
+and this is an array
+
+00:50.490 --> 01:03.070
+and here, I could have my Testserver and my Testserver2 maybe and when we create a new server here,
+
+01:03.950 --> 01:10.420
+I actually want to access this array of servers and push a new server on it
+
+01:10.790 --> 01:13.190
+and this should of course use the server name
+
+01:13.190 --> 01:19.290
+I set up. Now with this, I have an array of servers,
+
+01:19.330 --> 01:26.890
+it would now be great if we could replicate the app-server component as often as needed to have a server
+
+01:26.890 --> 01:28.470
+for each element in the array.
+
+01:28.480 --> 01:32.460
+So the two initially and then a new one for each server we add.
+
+01:33.160 --> 01:34.530
+We can do this.
+
+01:34.540 --> 01:40.180
+I'll get rid of the second app-server here and on the first one, I will place another directive with
+
+01:40.180 --> 01:43.440
+a star because this is now also a structural directive,
+
+01:43.500 --> 01:45.550
+changing the DOM itself,
+
+01:45.550 --> 01:52.740
+is the ngFor directive. The ngFor base syntax looks like this,
+
+01:52.750 --> 02:00.040
+we define a temporary variable for inside the loop with let, give it any name you like, like server for
+
+02:00.040 --> 02:11.230
+example and then of servers. Servers here is the property we defined in the TypeScript file and this will
+
+02:11.230 --> 02:17.590
+now loop through all elements in this array and assign the individual element to this dynamic server
+
+02:17.620 --> 02:18.370
+variable.
+
+02:18.370 --> 02:26.460
+So that's just like you might know this loop from a normal Javascript code, the for/of loop. This server
+
+02:26.500 --> 02:29.490
+variable can now be used in the template
+
+02:29.740 --> 02:32.890
+but here, we don't really need it to be honest,
+
+02:32.980 --> 02:41.400
+we will soon learn in the next course section how we can pass data to our own components to output it there.
+
+02:41.410 --> 02:43.460
+So for now, we won't need that
+
+02:43.750 --> 02:49.570
+but one thing we should see is that if I save this and we go back to our application, we still see two
+
+02:49.570 --> 02:51.030
+because we start with two
+
+02:51.250 --> 02:58.590
+but if I add more servers, you see our list grows and we can click this as often as we want.
+
+02:58.600 --> 03:07.030
+Of course the content of the individual server is still static because we can't pass the data like the
+
+03:07.120 --> 03:13.630
+server name to that component but that is something we will learn in the next course section when we
+
+03:13.630 --> 03:19.750
+dive deeper into components and we will learn how we can create our own properties on components
+
+03:19.840 --> 03:24.770
+we can then set from outside the feature which would be great to have here.
+
+03:24.930 --> 03:29.380
+So let's dive into this in the next course section, before doing so though,
+
+03:29.470 --> 03:35.590
+well let's practice the things we learned in the last lectures and then let's also set up our course
+
+03:35.590 --> 03:40.210
+project before we then dive deeper into components and data binding again.
+
+03:40.210 --> 03:41.610
+So see you there.

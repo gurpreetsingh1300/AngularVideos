@@ -1,0 +1,250 @@
+WEBVTT
+
+00:02.500 --> 00:06.690
+So where are you successful Let's have a look at my solution to gabber.
+
+00:06.820 --> 00:12.830
+The first task was to create two new components one manually and to Selye maybe.
+
+00:12.850 --> 00:16.240
+So I will start with the first one which I'll trade manually.
+
+00:16.300 --> 00:23.260
+I will create a new folder and I will name a warning alert and then there I will create a new file which
+
+00:23.260 --> 00:26.900
+will name warning all word dodge component dot.
+
+00:27.430 --> 00:30.400
+Following this naming convention I explained.
+
+00:30.910 --> 00:38.570
+Now in this typescript file I will export a class which will also name warning alert component.
+
+00:38.590 --> 00:45.940
+Again following this convention of being descriptive about what's in it here I will add the component
+
+00:46.210 --> 00:52.090
+decorator and as you learned the component decorator needs to be imported.
+
+00:52.180 --> 00:58.250
+So we should import component from at angular core like this.
+
+00:59.970 --> 01:05.220
+With that import added We need to configure the component so that angular is able to do something with
+
+01:05.220 --> 01:05.810
+it.
+
+01:05.880 --> 01:12.840
+We absolutely need to add a template and we should also add a selector here so that we are able to use
+
+01:12.840 --> 01:13.530
+it.
+
+01:13.650 --> 01:20.520
+Now the selectors could simply be app warning alert again to have a unique selector and the template
+
+01:20.550 --> 01:25.680
+you could point to a external file or use an inline template for days component.
+
+01:25.680 --> 01:31.830
+I will use the inline template though of course you are free to choose the external file and I will
+
+01:31.830 --> 01:39.300
+simply but when takes your create a multi-line string when I have a paragraph in which I say this is
+
+01:39.660 --> 01:40.860
+a warning.
+
+01:41.010 --> 01:42.600
+You are in danger.
+
+01:42.600 --> 01:47.530
+Whatever text you like is as my first component for now.
+
+01:47.550 --> 01:50.610
+Now I will treat the second component with the Seelye.
+
+01:50.820 --> 01:57.050
+So in the terminal I can create a new one by running Engy generate component.
+
+01:57.180 --> 02:03.880
+Or as I told you to shortcut Gizzi and all this will be the success alert.
+
+02:03.930 --> 02:06.140
+So success alert will be the name.
+
+02:06.150 --> 02:10.910
+This will give me success alert folder with all these files.
+
+02:10.980 --> 02:19.510
+I don't need the spec for the testing file here so I will remove it and now in this folder here we get
+
+02:19.890 --> 02:22.660
+out of the box working types typescript file.
+
+02:22.770 --> 02:28.290
+We get a HDMI file as a side note you can ignore this constructor and energy on that thing.
+
+02:28.290 --> 02:38.170
+I will come back to this later and here I want to output a number message where I say you are so successful.
+
+02:38.180 --> 02:41.260
+Maybe this is my success message.
+
+02:41.430 --> 02:44.090
+So with that both components are true you need it.
+
+02:44.100 --> 02:48.770
+I also already added their templates to the content of the templates.
+
+02:48.780 --> 02:54.010
+Now we should output them beneath each other here in the AB component.
+
+02:54.300 --> 02:56.840
+So do it is right below this paragraph.
+
+02:56.840 --> 03:06.500
+Maybe add a horizontal line to separate them and then I'll add the app warning alert component and the
+
+03:06.730 --> 03:07.250
+app.
+
+03:07.340 --> 03:10.070
+Success alert component.
+
+03:10.350 --> 03:14.190
+And now if we save this we will get an error.
+
+03:14.220 --> 03:17.650
+So now is your chance to anticipate this error and fix it.
+
+03:17.760 --> 03:20.760
+But it will show you which error it is in a second.
+
+03:21.000 --> 03:22.520
+So I'll save this.
+
+03:22.730 --> 03:28.670
+And let's now go to our presumably working application where we.
+
+03:28.800 --> 03:29.820
+Oh guess what.
+
+03:29.820 --> 03:30.930
+Find an error.
+
+03:30.960 --> 03:33.010
+So what's wrong.
+
+03:33.090 --> 03:34.760
+Let's have a look at the error message.
+
+03:35.190 --> 03:39.150
+Most major error messages are a kind of useful and ular that's a good thing.
+
+03:39.300 --> 03:44.130
+And here it says that app warning alert is not a known element.
+
+03:44.190 --> 03:49.200
+Isn't that strange because warning alert does select for here.
+
+03:49.200 --> 03:51.960
+I can copy it out and I don't have a typo.
+
+03:52.230 --> 03:58.200
+If I now paste it in there doesn't look like it had one so it should be known.
+
+03:58.530 --> 04:01.950
+Nope forgot one important thing app module.
+
+04:01.950 --> 04:03.430
+We have to add it there.
+
+04:03.720 --> 04:10.630
+Success alert component was add automatically since we used to Selye but our warning alert component.
+
+04:10.770 --> 04:17.670
+Well we have to add it on our own so we should add a warning alert component here and I could use my
+
+04:17.670 --> 04:21.020
+ID to auto imported bad for this time.
+
+04:21.030 --> 04:29.640
+I will type the import manually so warning Oler component should be imported from.
+
+04:29.640 --> 04:36.020
+And now we should point to our warning alert folder and there two warning alert Dotts component file
+
+04:36.030 --> 04:44.370
+without datt TSA dnt now with this in place now if you go back to the application now we see this as
+
+04:44.370 --> 04:44.960
+a warning.
+
+04:44.970 --> 04:47.910
+You are a danger or you are so successful.
+
+04:47.910 --> 04:50.260
+And now we can see both components.
+
+04:50.550 --> 04:53.500
+So we've finished these tasks here.
+
+04:53.520 --> 04:55.950
+Now let's solve them appropriately.
+
+04:56.130 --> 05:02.150
+So maybe a little box with a red background for the warning and with green for the success case.
+
+05:02.160 --> 05:07.530
+So for the warning alert I'm again going to use inline styles to have everything in line here to show
+
+05:07.530 --> 05:08.700
+how this works.
+
+05:08.700 --> 05:16.850
+So at my styles irate and in there I'll add back text to be able to write a multi line style and I basically
+
+05:16.850 --> 05:20.690
+want to style my paragraph which is the only element I have in here.
+
+05:20.750 --> 05:30.380
+So this paragraph now should receive some padding maybe 20 pixels and a background color of let's search
+
+05:30.380 --> 05:39.210
+for red or maybe some misty rose or something like that it's like red tagged shoes any color you want
+
+05:39.710 --> 05:45.090
+and maybe also let's give it a border of one pixel solid and a solid red color.
+
+05:45.290 --> 05:52.340
+If eyes save us we should now see books like a warning alert box looks fine to me.
+
+05:52.370 --> 05:56.010
+Now let's copy this for our success box.
+
+05:56.090 --> 06:01.620
+But here I'm going to use the external file which is already referenced in the typescript fall here.
+
+06:01.820 --> 06:10.050
+So let's add it here let's turn this to some light green maybe green yellow or do we have something
+
+06:10.070 --> 06:15.340
+pale green maybe and then use a clear green here for the border.
+
+06:15.350 --> 06:20.420
+And now we should see two boxes below it Shavar and one green one red.
+
+06:20.510 --> 06:24.340
+Depending on the component with our own style at it.
+
+06:24.350 --> 06:30.530
+So with that all tasks are completed this was the first little assignment to play a round of components
+
+06:30.770 --> 06:36.150
+and get into how to create how to style and how to work with them.
+
+06:36.440 --> 06:40.760
+Let's dive deeper into the basics of angular in the next lectures.
